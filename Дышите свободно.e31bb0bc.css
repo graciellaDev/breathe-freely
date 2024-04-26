@@ -1441,6 +1441,7 @@
    margin-top: auto;
  }
  .footer__link-contact {
+  width: max-content;
    margin-bottom: 16px;
  }
  @media screen and (max-width: 1366px) {
