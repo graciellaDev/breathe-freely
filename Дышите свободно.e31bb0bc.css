@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /**
  * Swiper 11.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -178,7 +171,7 @@
    padding: 14px 30px;
    border: 2px solid var(--secondary-color);
    border-radius: 100px;
-   font-size: 20px;
+   font-size: 24px;
    line-height: 1.5;
    color: #fff;
    background-color: var(--secondary-color);
@@ -476,6 +469,10 @@
    --border-radius-card: 80px;
    --back-color-ligth-green: rgba(154, 194, 42, 0.15);
  }
+ .main {
+   padding-top: 114px;
+ }
+ 
  .hero {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -541,6 +538,7 @@
    text-align: center;
    line-height: 1.1;
    letter-spacing: 1.8px;
+   flex-direction: column;
  }
  .hero__title_tranc {
    opacity: 0.7;
@@ -582,7 +580,7 @@
        -ms-flex-pack: center;
            justify-content: center;
    gap: 16px;
-   right: 0 !important;
+   right: 16px !important;
    left: unset !important;
    height: 100%;
    width: -webkit-max-content !important;
@@ -753,7 +751,7 @@
        -ms-flex-direction: column;
            flex-direction: column;
    height: auto;
-   padding: 176px 18px 72px;
+   padding: 188px 18px 68px;
    border: var(--border-card);
    border-radius: var(--border-radius-card);
    -webkit-box-sizing: border-box;
@@ -839,7 +837,7 @@
    font-weight: 600;
  }
  .reviews__text {
-   line-height: 1.5;
+   line-height: 1.3;
  }
  .reviews__text:not(:last-child) {
    margin-bottom: 8px;
@@ -988,7 +986,7 @@
        -ms-flex-pack: center;
            justify-content: center;
    gap: 12px;
-   list-style-type: none;
+   padding-left: 40px;
    font-size: 20px;
    -webkit-backface-visibility: hidden;
            backface-visibility: hidden;
@@ -1015,7 +1013,7 @@
    font-weight: 400;
  }
  .process__steps-list {
-   list-style-type: none;
+   padding-left: 40px;
  }
  .advantages {
    position: relative;
@@ -1187,6 +1185,7 @@
    font-size: 16px;
  }
  .speakers {
+   margin-bottom: 140px;
    padding-bottom: 33px;
  }
  .speakers__wrap {
@@ -1201,7 +1200,7 @@
    position: relative;
    height: auto;
    border: var(--border-card);
-   border-radius: var(--border-radius-card);
+   border-radius: 50px;
    -webkit-box-sizing: border-box;
            box-sizing: border-box;
  }
@@ -1212,10 +1211,13 @@
  .speakers__slide_text .speakers__name {
    top: -48px;
  }
+ .speakers__title {
+   margin-bottom: 100px;
+ }
  .speakers__name {
    position: absolute;
-   top: -24px;
-   left: 0;
+   top: -32px;
+   left: -7px;
    font-size: 24px;
    font-weight: 700;
    color: var(--secondary-color);
@@ -1244,7 +1246,7 @@
    height: 100%;
    -o-object-fit: cover;
       object-fit: cover;
-   border-radius: 72px;
+   border-radius: 40px;
  }
  .speakers__img-content {
    width: 120px;
@@ -1279,8 +1281,8 @@
    list-style-type: none;
  }
  .faq__item {
-   -ms-flex-preferred-size: calc(50% - 31px);
-       flex-basis: calc(50% - 31px);
+   -ms-flex-preferred-size: calc(51% - 28px);
+       flex-basis: calc(51% - 28px);
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -1298,12 +1300,12 @@
    border: var(--border-card);
  }
  .faq__item:first-child {
-   -ms-flex-preferred-size: calc(60% - 31px);
-       flex-basis: calc(60% - 31px);
+   -ms-flex-preferred-size: calc(60% - 32px);
+       flex-basis: calc(60% - 32px);
  }
  .faq__item:nth-child(2) {
-   -ms-flex-preferred-size: calc(40% - 31px);
-       flex-basis: calc(40% - 31px);
+   -ms-flex-preferred-size: calc(42% - 23px);
+       flex-basis: calc(42% - 23px);
  }
  .faq__item:nth-child(4n) {
    margin-bottom: -67px;
@@ -1326,10 +1328,10 @@
    display: -ms-flexbox;
    display: flex;
    gap: 80px;
-   margin-left: -53px;
-   margin-right: -53px;
+   margin-left: -47px;
+   margin-right: -47px;
    margin-bottom: 144px;
-   padding: 70px 60px;
+   padding: 70px 73px;
    background-color: var(--main-color);
    border-radius: 40px;
  }
@@ -1341,6 +1343,7 @@
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
+   gap: 60px;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
@@ -1348,16 +1351,15 @@
    -webkit-box-align: baseline;
        -ms-flex-align: baseline;
            align-items: baseline;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
  }
  .banner__title {
-   margin-bottom: 32px;
    font-size: 64px;
    font-weight: 600;
    line-height: 1.1;
    color: #fff;
- }
- .banner__btn {
-   margin-top: auto;
  }
  .footer {
    padding-top: 64px;
@@ -1441,12 +1443,14 @@
    margin-top: auto;
  }
  .footer__link-contact {
-  width: max-content;
    margin-bottom: 16px;
  }
- @media screen and (max-width: 1366px) {
+ @media screen and (max-width: 1367px) {
    .section {
      margin-bottom: 128px;
+   }
+   .section__title {
+     margin-bottom: 56px;
    }
    .container {
      max-width: unset;
@@ -1487,6 +1491,12 @@
    .main {
      padding-top: 115px;
    }
+   .hero {
+     margin-bottom: 104px;
+   }
+   .hero__wrapper {
+     margin-bottom: 32px;
+   }
    .hero__slide {
      min-height: 400px;
      padding-top: 24px;
@@ -1514,14 +1524,27 @@
    .hero__text {
      padding-left: 110px;
      padding-right: 110px;
+     font-size: 18px;
+     line-height: 1.3;
+     letter-spacing: normal;
+   }
+   .hero__btn {
+     padding: 11px 70px;
+     font-size: 24px;
+   }
+   .video {
+     margin-bottom: 108px;
    }
    .reviews__slide {
-     padding: 103px 33px 38px;
+     padding: 103px 25px 38px;
      font-size: 18px;
      line-height: 1.3;
    }
    .reviews__slide_smaller {
-     padding-top: 81px;
+     padding-top: 57px;
+   }
+   .reviews__item:not(:last-child) {
+     margin-bottom: 6px;
    }
    .reviews__img {
      right: -2px;
@@ -1534,8 +1557,17 @@
    .reviews__text {
      line-height: inherit;
    }
+   .reviews__nav {
+     margin-bottom: 46px;
+   }
+   .reviews__title-slide {
+     line-height: 1.2;
+   }
    .process__cards {
      gap: 50px;
+   }
+   .process__title {
+     margin-bottom: 56px;
    }
    .advantages::after {
      left: -38px;
@@ -1544,16 +1576,32 @@
      -webkit-box-pack: justify;
          -ms-flex-pack: justify;
              justify-content: space-between;
+     margin-bottom: 3px;
+   }
+   .advantages__list {
+     width: 287px;
+   }
+   .advantages__slide_bottom {
+     -webkit-transform: translateY(233px);
+         -ms-transform: translateY(233px);
+             transform: translateY(233px);
+   }
+   .team {
+     margin-bottom: 0;
    }
    .team__wrap {
      gap: 97px;
      padding-left: 80px;
      padding-right: 80px;
    }
+   .team__title {
+     margin-bottom: 48px;
+   }
    .team__img {
      min-height: 469px;
    }
    .team__content {
+     bottom: 17%;
      padding-top: 32px;
      padding-bottom: 32px;
    }
@@ -1563,14 +1611,39 @@
    .team__text {
      font-size: 16px;
    }
+   .speakers {
+     margin-bottom: 136px;
+   }
+   .speakers__slide {
+     width: 600px;
+   }
+   .speakers__title {
+     margin-bottom: 100px;
+   }
+   .faq__item:first-child {
+     -ms-flex-preferred-size: calc(61% - 25px);
+         flex-basis: calc(61% - 25px);
+   }
+   .faq__item:nth-child(2) {
+     -ms-flex-preferred-size: calc(40% - 21px);
+         flex-basis: calc(40% - 21px);
+   }
    .banner {
-     margin-left: -30px;
-     margin-right: -30px;
+     margin-left: -17px;
+     margin-right: -17px;
+   }
+   .footer__col_adress {
+     -ms-flex-preferred-size: calc(22% - 36px);
+         flex-basis: calc(22% - 36px);
    }
  }
  @media screen and (max-width: 1200px) {
    .section {
      margin-bottom: 140px;
+   }
+   .section__title {
+     font-size: 32px;
+     font-weight: 900;
    }
    .container {
      padding-left: 34px;
@@ -1578,6 +1651,9 @@
    }
    .section {
      margin-bottom: 140px;
+   }
+   .section__description {
+     font-size: 18px;
    }
    .spoiler {
      height: 350px;
@@ -1697,7 +1773,6 @@
    }
    .hero {
      left: -34px;
-     width: calc(100% + 64px);
      padding: 0;
    }
    .hero__wrapper {
@@ -1773,6 +1848,10 @@
      line-height: 1.1;
      letter-spacing: 0;
    }
+   .video__spoiler {
+     height: 350px;
+     min-height: unset;
+   }
    .reviews__prev, .reviews__next {
      width: 38px;
      height: 38px;
@@ -1787,11 +1866,18 @@
    .reviews__prev::after, .reviews__next::after {
      top: calc(50% - 1px);
    }
-   .reviews__slide {
-     padding: 92px 24px 33px;
+   .reviews__title {
+     margin-bottom: 8px;
    }
-   .reviews__slide_smaller {
-     padding: 61px 45px 33px;
+   .reviews__title-slide {
+     margin-bottom: 10px;
+     font-size: 16px;
+   }
+   .reviews__slide {
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     padding: 38px 22px 15px;
    }
    .reviews__img {
      right: 16px;
@@ -1803,10 +1889,23 @@
      width: 88px;
    }
    .reviews__text:not(:last-child) {
-     margin-bottom: 6pxs;
+     margin-bottom: 4px;
    }
    .reviews__item:not(:last-child) {
-     margin-bottom: 6px;
+     margin-bottom: 3px;
+   }
+   .reviews__user {
+     position: absolute;
+     bottom: 29px;
+     right: 43px;
+   }
+   .reviews__img {
+     top: -52px;
+     right: 10px;
+   }
+   .reviews__img_smaller {
+     top: -41px;
+     right: 18px;
    }
    .ticker__content {
      padding: 12px 0;
@@ -1823,7 +1922,7 @@
      -ms-flex-wrap: wrap;
          flex-wrap: wrap;
    }
-   .process__cards-title {
+   .process__card-title {
      font-size: 20px;
    }
    .process__item {
@@ -1911,6 +2010,9 @@
      border-right: 5px solid transparent;
      border-bottom: 8px solid #fff;
    }
+   .speakers__text {
+     font-size: 16px;
+   }
    .faq__list {
      gap: 32px;
    }
@@ -1984,8 +2086,8 @@
      margin-bottom: 104px;
    }
    .container {
-     padding-left: 16px;
-     padding-right: 16px;
+     padding-left: 24px;
+     padding-right: 24px;
    }
    .header {
      padding: 20px 16px 14px;
@@ -2119,10 +2221,10 @@
      bottom: 0;
    }
    .team__content {
-     min-height: 149px;
+     min-height: unset;
      height: unset;
-     padding-top: 16px;
-     padding-bottom: 16px;
+     padding-top: 20px;
+     padding-bottom: 20px;
    }
    .team__name {
      font-size: 18px;
@@ -2146,6 +2248,16 @@
    }
    .speakers__slide_text .speakers__name {
      top: -40px;
+   }
+   .speakers__data {
+     padding: 10px 12px;
+   }
+   .speakers__text {
+     font-size: 12px;
+   }
+   .speakers__img-content {
+     width: 56px;
+     height: 56px;
    }
    .faq__list {
      gap: 16px;
